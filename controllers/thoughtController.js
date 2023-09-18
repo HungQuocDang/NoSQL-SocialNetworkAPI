@@ -43,8 +43,10 @@ module.exports = {
   },
   async updateThoughtById(req, res) {
     try {
-      const thought = await Thought.findOneAndUpdate(req.params.thoughtId, req.body, 
-      { new: true, }
+       //const thought = await Thought.findOneAndUpdate(req.params.thoughtId, req.body, 
+      // { new: true, }
+      const thought = await Thought.findOneAndUpdate({ _id: req.params.thoughtId }
+
     );
 
       if (!thought) {
@@ -64,7 +66,7 @@ module.exports = {
       if (!thought) {
         return res.status(404).json({ message: 'No thought with this id!' });
       }
-
+      res.json(thought);
     } catch (err) {
       res.status(500).json(err);
     }

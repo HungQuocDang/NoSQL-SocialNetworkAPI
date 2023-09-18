@@ -33,8 +33,6 @@ module.exports = {
     }
   },
 
-  
-
   async deleteUserById(req, res) {
       try {
         const userData = await User.findOneAndDelete(req.params.id);
@@ -47,7 +45,26 @@ module.exports = {
 
 
 
-
+    async updateUserById(req, res) {
+      try {
+        //const userData = await User.findOneAndUpdate(req.params.id);
+        //const userData = await User.findOneAndUpdate(req.params.userById, req.body, 
+        // { new: true, }
+        const userData = await User.findOneAndUpdate({ _id: req.params.userId }
+          //const userData = await User.findOneAndUpdate({ _id: req.params.id }
+           // const userData = await User.findOneAndUpdate(req.params.userId 
+      );
+  
+        if (!userById) {
+          return res.status(404).json({ message: 'No user with this id!' });
+        }
+  
+        res.json(userData);
+      } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+      }
+    },
 
 
 
