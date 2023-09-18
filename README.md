@@ -6,6 +6,16 @@
 
 User will use VS code and Insomia 2023.5.8 and MongoDB 7.0.0 to verify the affectations of data into the data base MongoDB.
 
+Deployed link: 
+https://hungquocdang.github.io/NoSQL-SocialNetworkAPI/
+
+Github link:
+https://github.com/HungQuocDang/NoSQL-SocialNetworkAPI
+
+Demo on how to use it: https://drive.google.com/file/d/11EtgT0OzKex1yZFt35ye6GtS4HmyBVsG/view
+
+
+
 First to clone the code from Github
 Then type npm i
 Type node index.js
