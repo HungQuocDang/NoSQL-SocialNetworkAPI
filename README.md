@@ -69,3 +69,7 @@ DELETE to pull and remove a reaction by the reaction's reactionId value
 http://localhost:3001/api/thoughts/64ff5de4ca2c1ce8d3e0e571/reactions:65082315b412d435d544c971
 
 
+
+
+![Insomia_MongooseDb](https://github.com/HungQuocDang/NoSQL-SocialNetworkAPI/assets/129162404/719339cc-e381-4024-a8d7-ad3d5e2d804f)
+
